@@ -1,0 +1,23 @@
+{
+  "cocteles": [
+    { "nombre": "Pisco sour", "precio": 4500 },
+    { "nombre": "Pisco sour catedral", "precio": 7500 },
+    { "nombre": "Ramazzotti", "precio": 6500 },
+    { "nombre": "Aperol spritz", "precio": 6500 },
+    { "nombre": "Mojito cubano", "precio": 5500 },
+    { "nombre": "Mojito sabores", "precio": 6000 },
+    { "nombre": "Caipiriña", "precio": 5900 },
+    { "nombre": "Caipiroska", "precio": 5900 },
+    { "nombre": "Daiquirí", "precio": 5900 },
+    { "nombre": "Tom Collins", "precio": 6500 },
+    { "nombre": "Gin Tonic", "precio": 5900 },
+    { "nombre": "Tropical Gin", "precio": 6500 },
+    { "nombre": "Tequila Margarita", "precio": 6000 },
+    { "nombre": "Vodka Tonic", "precio": 5900 },
+    { "nombre": "Russo negro", "precio": 5900 },
+    { "nombre": "John Collins", "precio": 6500 },
+    { "nombre": "Old Fashioned", "precio": 6500 },
+    { "nombre": "Cuba Libre", "precio": 5900 },
+    { "nombre": "Sangria", "precio": 4500 }
+  ]
+}

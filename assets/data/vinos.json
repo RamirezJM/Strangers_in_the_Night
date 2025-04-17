@@ -1,0 +1,59 @@
+{
+  "vinos_3_4": [
+    {
+      "nombre": "Misiones de Rengo",
+      "descripcion": "Carmenere 2023. Varietal",
+      "precio": 8500
+    },
+    {
+      "nombre": "Carmen Clásico",
+      "descripcion": "Carmenere 2020. Varietal",
+      "precio": 8500
+    },
+    {
+      "nombre": "Casa Rivas",
+      "descripcion": "Cabernet Sauvignon 2024",
+      "precio": 8500
+    },
+    {
+      "nombre": "Sol de Chile",
+      "descripcion": "Carmenere 2021. Reserva",
+      "precio": 11500
+    },
+    {
+      "nombre": "Alto Tierruca",
+      "descripcion": "Carmenere 2022. Reserva",
+      "precio": 11500
+    },
+    {
+      "nombre": "Tagua Tagua",
+      "descripcion": "Syrah 2020. Reserva",
+      "precio": 12500
+    },
+    {
+      "nombre": "Doña Dominga. De Familia",
+      "descripcion": "Cabernet Sauvignon 2023. Casa Silva",
+      "precio": 12500
+    },
+    {
+      "nombre": "Misiones de Rengo",
+      "descripcion": "Medium Sweet / Carmenere 2022. Reserva",
+      "precio": 13500
+    },
+    {
+      "nombre": "Palo Alto",
+      "descripcion": "Cabernet Sauvignon 2021. Reserva",
+      "precio": 15000
+    },
+    {
+      "nombre": "Diablo",
+      "descripcion": "Deep Carmenere 2023. Vintage Reserva",
+      "precio": 17000
+    },
+    {
+      "nombre": "Diablo",
+      "descripcion": "Dark Red 2022. Vintage Reserva",
+      "precio": 17000
+    }
+  ]
+}

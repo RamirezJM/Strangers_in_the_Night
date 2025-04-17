@@ -1,0 +1,11 @@
+{
+  "combinados": [
+    { "nombre": "Pisco Mistral 35º / Alto del Carmen 35º", "precio": 4500 },
+    { "nombre": "Mistral Nobel / Apple", "precio": 5500 },
+    { "nombre": "Ron", "precio": 4500 },
+    { "nombre": "Whisky Blenders Apple / Honey", "precio": 5000 },
+    { "nombre": "Whisky Johnnie Walker", "precio": 6000 },
+    { "nombre": "Whisky Jack Daniels", "precio": 8000 },
+    { "nombre": "Whisky Chivas Regal", "precio": 9000 }
+  ]
+}

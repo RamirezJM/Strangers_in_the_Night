@@ -1,0 +1,79 @@
+{
+  "sandwich": [
+    {
+      "nombre": "Churrasco Mayo",
+      "ingredientes": "Churrasco con mayonesa.",
+      "precio": 6500
+    },
+    {
+      "nombre": "Churrasco Italiano",
+      "ingredientes": "Churrasco, tomate, palta y mayonesa.",
+      "precio": 7500
+    },
+    {
+      "nombre": "Chacarero",
+      "ingredientes": "Churrasco de vacuno, tomate, porotos verdes, ají verde y mayonesa.",
+      "precio": 7900
+    },
+    {
+      "nombre": "Lomito Italiano",
+      "ingredientes": "Lomo de cerdo, tomate, palta y mayonesa.",
+      "precio": 7500
+    },
+    {
+      "nombre": "Barros Luco",
+      "ingredientes": "Carne de vacuno y queso fundido.",
+      "precio": 7500
+    },
+    {
+      "nombre": "Chemilico",
+      "ingredientes": "Bistec de vacuno, cebolla y huevo, acompañado de papas fritas",
+      "precio": 8000
+    },
+    {
+      "nombre": "Sandwich de pescado",
+      "ingredientes": "Pescado con ensalada chilena.",
+      "precio": 8500
+    },
+    {
+      "nombre": "Hamburguesa Queso",
+      "ingredientes": "Hamburguesa de vacuno con queso fundido.",
+      "precio": 7500
+    },
+    {
+      "nombre": "Hamburguesa Italiana",
+      "ingredientes": "Hamburguesa de vacuno, tomate, palta y mayonesa.",
+      "precio": 7500
+    },
+    {
+      "nombre": "Hamburguesa Tradicional",
+      "ingredientes": "Hamburguesa de vacuno, tomate, lechuga y mayonesa.",
+      "precio": 7500
+    },
+    {
+      "nombre": "Hamburguesa Americana",
+      "ingredientes": "Hamburguesa de vacuno, queso cheddar, cebolla morada, tomate, lechuga, pepinillos y mayonesa.",
+      "precio": 9900
+    },
+    {
+      "nombre": "Sanguchito de Pollo Italiano",
+      "ingredientes": "Pollo a la plancha, tomate, palta y mayonesa.",
+      "precio": 7000
+    },
+    {
+      "nombre": "Sanguchito de Pollo Gourmet",
+      "ingredientes": "Pollo a la plancha, champiñón, queso y cebolla salteada.",
+      "precio": 8000
+    },
+    {
+      "nombre": "Sanguchito Vegetariano",
+      "ingredientes": "Champiñón con 2 agregados (palta, queso, tomate, lechuga, cebolla caramelizada, porotos verdes, aceitunas, pimentón)",
+      "precio": 8500
+    },
+    {
+      "nombre": "Sanguchito Vegano",
+      "ingredientes": "Hamburguesa vegana, queso vegano, pepinillo, palta, tomate y lechuga.",
+      "precio": 8500
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "bebidas": [
+    { "nombre": "Lata Mini / Agua Mineral", "precio": 2000 },
+    { "nombre": "Energética", "precio": 3500 },
+    { "nombre": "Jugo de Fruta", "precio": 4000 }
+  ]
+}

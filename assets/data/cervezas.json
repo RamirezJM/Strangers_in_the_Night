@@ -1,0 +1,7 @@
+{
+  "cervezas": [
+    { "nombre": "Heineken / Sol / Corona 330 cc.", "precio": 3000 },
+    { "nombre": "Toro Bayo 500 cc.", "precio": 4500 },
+    { "nombre": "Michelada / Chelada", "precio": 4000 }
+  ]
+}
