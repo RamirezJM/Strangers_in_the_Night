@@ -277,6 +277,41 @@ iframe{
   padding-bottom: 1em;
 }
 
+
+/*********menu***********/
+
+.carta{
+  width: 90%;
+  margin: auto;
+  padding: 1em;
+  border: solid 3px #00c327;
+}
+.item-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 1em;
+}
+.ingredientes{
+  max-width: 70%;
+  margin-block: 1em;
+}
+
+.precios{
+  display: flex;
+  gap: 1em;
+  padding-inline: .5em;
+  
+}
+.nombre{
+  font-size: 1.1rem;
+  font-weight: 700;
+  max-width: 60%;
+}
+.valor{
+  font-size: 1rem;
+}
+
 @media (min-width:650px){
   header{
     flex-wrap: nowrap;

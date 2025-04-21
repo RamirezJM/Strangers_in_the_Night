@@ -3,62 +3,62 @@
     {
       "nombre": "Piqueo Fusión",
       "ingredientes": "Aceitunas, jamón, queso, salame, frutos secos, galletitas saladas, papas Crispys y salsas.",
-      "precio2": 9900,
-      "precio4": 16900
+      "precio": 9900,
+      "precio2": 16900
     },
     {
       "nombre": "La 'Pinche' Tabla",
       "ingredientes": "Mix de Tacos y Quesadillas, acompañados de nachos, ají jalapeños y guacamole.",
-      "precio2": 12900,
-      "precio4": 20900
+      "precio": 12900,
+      "precio2": 20900
     },
     {
       "nombre": "Tabla Fashion",
       "ingredientes": "Salteado de pollo, champiñón y verduras mixtas, acompañado de papas fritas.",
-      "precio2": 12900,
-      "precio4": 19900
+      "precio": 12900,
+      "precio2": 19900
     },
     {
       "nombre": "Papas Bravas Valdivianas",
       "ingredientes": "Papas rústicas en salsa brava, acompañada de pollo y champiñón, con un toque de perejil.",
-      "precio2": 13900,
-      "precio4": 24900
+      "precio": 13900,
+      "precio2": 24900
     },
     {
       "nombre": "Pichanga Sureña",
       "ingredientes": "Base de papas fritas, carne de cerdo, salchichas, aceitunas, tomate, palta, huevo duro, queso y pepinillos.",
-      "precio2": 13900,
-      "precio4": 23900
+      "precio": 13900,
+      "precio2": 23900
     },
     {
       "nombre": "Tabla Delicias",
       "ingredientes": "Alitas de pollo apanadas y aros de cebolla, acompañados de papas fritas o papas bravas al merkén.",
-      "precio2": 13900,
-      "precio4": 23900
+      "precio": 13900,
+      "precio2": 23900
     },
     {
       "nombre": "Chorrillana Campestre",
       "ingredientes": "Base de papas fritas con carne de vacuno, cerdo, longaniza, cebolla caramelizada y huevo frito.",
-      "precio2": 13900,
-      "precio4": 24900
+      "precio": 13900,
+      "precio2": 24900
     },
     {
       "nombre": "Veggie Visión (vegetariana)",
       "ingredientes": "Champiñones rellenos en cama de verduras, acompañados de papas salteadas al romero y oliva.",
-      "precio2": 13900,
-      "precio4": 24900
+      "precio": 13900,
+      "precio2": 24900
     },
     {
       "nombre": "Capricho Marino",
       "ingredientes": "Base de papas fritas bañadas en exquisita salsa de mariscos surtidos y nuggets de pescado.",
-      "precio2": 15900,
-      "precio4": 27900
+      "precio": 15900,
+      "precio2": 27900
     },
     {
       "nombre": "La 'Vikinga'",
       "ingredientes": "Carne de vacuno, costillitas de cerdo, trutos de ala, longaniza y prietas, acompañados de papas rústicas o fritas",
-      "precio2": 20900,
-      "precio4": 37900
+      "precio": 20900,
+      "precio2": 37900
     }
   ]
 }
