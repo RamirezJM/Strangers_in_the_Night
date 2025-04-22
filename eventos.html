@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.12.0/baguetteBox.min.css" integrity="sha512-1hit2XBKwGtoT792KMYEhLYTk+eYYATgFqSkftn4dG8/7TA0ysVRCBIYzhe+IRd9XPi2l8pceoKlV+Oa/B+PDA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="assets/css/styles.css">
   <title>Las Tablas</title>
 </head>
-
 <body>
   <header>
     <div class="title">
@@ -22,24 +21,30 @@
       <ul class="links-list">
         <li><a href="index.html" class="nav-link">Inicio</a></li>
         <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
-        <li><a href="menu.html" class="nav-link active">Menú</a></li>
-        <li><a href="eventos.html" class="nav-link">Eventos</a></li>
+        <li><a href="menu.html" class="nav-link">Menú</a></li>
+        <li><a href="eventos.html" class="nav-link active">Eventos</a></li>
         <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+      
       </ul>
 
     </nav>
   </header>
+
   <main>
-    <section id="cocteles" class="carta"></section>
-    <section id="combinados" class="carta"></section>
-    <section id="vinos" class="carta"></section>
-    <section id="cervezas" class="carta"></section>
-    <section id="bebidas" class="carta"></section>
-    <section id="tablas" class="carta"></section>
-    <section id="sandwich" class="carta"></section>
-    
+
+    <section class="eventos">
+      <h2>Blues and Rock</h2>
+      <p>Viernes 11 de Abril</p>
+      <img src="assets/images/blues_rock.jpg" alt="flyer blues and rock" class="eventos-flyer">
+      <h3>Galería de imágenes</h3>
+      <p>(Toca sobre la imagen para ampliar)</p>
+      <div class="blues-rock eventos-galeria"></div>
+    </section>
+
   </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.12.0/baguetteBox.min.js" integrity="sha512-HzIuiABxntLbBS8ClRa7drXZI3cqvkAZ5DD0JCAkmRwUtykSGqzA9uItHivDhRUYnW3MMyY5xqk7qVUHOEMbMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/js/gallery.js"></script>
   <script src="assets/js/script.js"></script>
-  <script src="assets/js/data.js"></script>
+  
 </body>
 </html>

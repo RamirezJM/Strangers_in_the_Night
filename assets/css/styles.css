@@ -312,6 +312,48 @@ iframe{
   font-size: 1rem;
 }
 
+
+
+/***********eventos*********/
+
+.eventos{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 1em;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em;
+
+}
+.eventos-flyer{
+  width: 50%;
+}
+
+.eventos-galeria{
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-auto-rows: auto;
+  grid-auto-flow: dense;
+  row-gap: 1em;
+  justify-items: center;
+}
+.eventos-galeria a{
+  text-align: center;
+  width: 100%;
+}
+
+.eventos-galeria a img{
+  width: 60%;
+  height: auto;
+  border-radius: 5px;
+   
+  object-fit: cover;
+}
+
 @media (min-width:650px){
   header{
     flex-wrap: nowrap;
