@@ -47,7 +47,7 @@ text-shadow: 2px 2px 4px #343434, 4px 4px 6px goldenrod;
 }
 
 .btn-menu{
-  width: 2em;
+  width: 3em;
   fill: #faebd7;
   background-color: transparent;
   border: #faebd7 solid 2px;
@@ -183,15 +183,6 @@ main{
   100% { background-position: 0% 50%; }
 } 
  
-
-
-/*  .main-content:focus, .main-content:hover{
- border: 3px solid #ff00e6;
- }
- */
-
-
-
  .main-content h2{
   font-size: 1.2rem;
   color: #faebd7;
@@ -223,7 +214,7 @@ main{
   display: grid;
   grid-template-columns: 1fr;
   gap: 1em; 
-  border: solid 3px #00c327;
+  border: solid .5em #00c327;
   border-radius: 10px;
 
  }
@@ -260,10 +251,10 @@ main{
   padding-block: 1em;
   transition: border 500ms ease-in;
  }
- .footer-container section:focus, .footer-container section:hover{
+/*  .footer-container section:focus, .footer-container section:hover{
   border: 3px solid #ff00e6;
 
- }
+ } */
  .footer-container h2{
   font-size: 1.2rem;
 
@@ -304,6 +295,12 @@ iframe{
   border-radius: 16px;
   z-index: 1;
   overflow: hidden; 
+
+
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .carta::before {
@@ -329,7 +326,27 @@ iframe{
   100% { background-position: 0% 50%; }
 } 
 
-
+#cocteles{
+  background-image: url('../images/cocteles.jpg'), linear-gradient(45deg, #000000, #343434 50%, #000000);
+}
+#combinados{
+  background-image: url('../images/combinados.jpg'), linear-gradient(45deg, #000000, #343434 50%, #000000);
+}
+#vinos{
+  background-image: url('../images/vinos.jpg'), linear-gradient(45deg, #000000, #343434 50%, #000000);
+}
+#cervezas{
+  background-image: url('../images/cervezas.jpg'), linear-gradient(45deg, #000000, #343434 50%, #000000);
+}
+#bebidas{
+  background-image: url('../images/bebidas.jpg'), linear-gradient(45deg, #000000, #343434 50%, #000000);
+}
+#tablas{
+  background-image: url('../images/tablas.jpg'), linear-gradient(45deg, #000000, #343434 50%, #000000);
+} 
+#sandwich{
+  background-image: url('../images/sandwich.jpg'), linear-gradient(45deg, #000000, #343434 50%, #000000);
+}
 .menu-title{
   font-size: 1.5rem;
   text-shadow: 1px 1px 2px #343434, 2px 2px 4px goldenrod;
