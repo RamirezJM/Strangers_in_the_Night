@@ -350,7 +350,7 @@ iframe{
   width: 60%;
   height: auto;
   border-radius: 5px;
-   
+  aspect-ratio: 1 / 1.5; 
   object-fit: cover;
 }
 
