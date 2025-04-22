@@ -4,21 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
   <title>Las Tablas</title>
 </head>
 
 <body>
   <header>
-    <div class="title">
-      <img src="assets/images/Logo_sm.png" alt="logo las tablas">
-      <p>Las Tablas</p>
-    </div>
+    <h1>Restaurant, Eventos y Bar-Discoteque</h1>
     <button class="btn-menu"><svg xmlns="http://www.w3.org/2000/svg" class="open-menu" viewBox="0 0 448 512">
         <path
           d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
       </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" class="close-menu" viewBox="0 0 384 512"><path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="close-menu" viewBox="0 0 384 512">
+        <path
+          d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
+      </svg>
     </button>
     <nav>
       <ul class="links-list">
@@ -34,28 +35,45 @@
   <main>
     <section class="hero">
       <div class="hero-title">
-        <h1>Restaurante, Bar, Discoteque y Eventos.</h1>
+        <img src="assets/images/Logo_sm.png" alt="logo las tablas" data-aos="zoom-in"  data-aos-duration="1500">
       </div>
     </section>
     <div class="main-container">
-      <section class="main-content">
+      <section class="main-content" data-aos="flip-up">
         <h2>Nosotros</h2>
         <img src="assets/images/nosotros.jpg" alt="personas sosteniendo una bandeja de tragos">
-        <p>Descubre un espacio donde se fusionan lo rústico y lo moderno. Más que un
+        <p>
+          <!-- Descubre un espacio donde se fusionan lo rústico y lo moderno. Más que un
           restaurante, somos un punto de encuentro, un lugar donde la música en vivo llena el ambiente y la alegría se
           comparte. Con cómodas instalaciones y un amplio estacionamiento, te invitamos a ser parte de nuestra
-          historia. Ven y siente la calidez de nuestro hogar, donde cada visita se convierte en un recuerdo inolvidable.
+          historia. Ven y siente la calidez de nuestro hogar, donde cada visita se convierte en un recuerdo inolvidable. -->
+          Un rincón donde lo rústico y lo moderno se encuentran. Más que un restaurante, somos un espacio para compartir, con música en vivo, buena vibra y el calor de sentirse en casa.
         </p>
         <a href="nosotros.html">Conócenos</a>
       </section>
-      <section class="main-content">
+      <section class="main-content" data-aos="flip-up">
         <h2>Menú</h2>
         <img src="assets/images/menu.jpg" alt="tabla de alimentos">
-        <p>Prepárate para un festín de sabores. Nuestra carta es un homenaje a la buena comida y a la
+        <p>
+          <!-- Prepárate para un festín de sabores. Nuestra carta es un homenaje a la buena comida y a la
           mejor compañía, desde exquisitas tablas para compartir hasta cócteles que despiertan los sentidos. Sumérgete
           en una experiencia culinaria única, donde cada plato y cada trago cuentan una historia. Descubre la variedad
-          que nos define y déjate seducir por nuestras creaciones.</p>
+          que nos define y déjate seducir por nuestras creaciones. -->
+          Sabores que cuentan historias. Tablas, cócteles y platos pensados para disfrutar y compartir. Una carta que invita a descubrir, probar y repetir.
+        </p>
         <a href="menu.html">Explora nuestro menú</a>
+      </section>
+      <section class="main-content" data-aos="flip-up">
+        <h2>Eventos</h2>
+        <img src="assets/images/eventos.jpg" alt="personas en torno a una mesa">
+        <p>
+          <!-- Prepárate para un festín de sabores. Nuestra carta es un homenaje a la buena comida y a la
+          mejor compañía, desde exquisitas tablas para compartir hasta cócteles que despiertan los sentidos. Sumérgete
+          en una experiencia culinaria única, donde cada plato y cada trago cuentan una historia. Descubre la variedad
+          que nos define y déjate seducir por nuestras creaciones. -->
+          La fiesta no se cuenta, se vive. Conciertos, celebraciones y noches temáticas que hacen vibrar cada rincón. Revive los mejores momentos de nuestros eventos.
+        </p>
+        <a href="eventos.html">Nuestros eventos</a>
       </section>
     </div>
   </main>
@@ -93,7 +111,7 @@
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2319.5490987026!2d-71.01875221434167!3d-34.696659034954706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1742591429570!5m2!1ses!2scl"
           width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <p>Ruta 5 Sur Km 151, Caletera Oriente, Las Mariposas, Chimbarongo</p>
+        <p>Ruta 5 Sur Km 151, Caletera Oriente, Las Mariposas, Chimbarongo</p>
       </section>
     </div>
     <div class="copyright">
@@ -101,6 +119,7 @@
       <p>Desarrollo Web <a href="#">RamirezJM</a></p>
     </div>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
 

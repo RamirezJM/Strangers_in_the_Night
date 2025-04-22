@@ -1,6 +1,7 @@
 const menuButton = document.querySelector('.btn-menu')
 const navMenu = document.querySelector('.links-list')
 
+AOS.init();
 
 menuButton.addEventListener("click", () =>{
   navMenu.classList.toggle('active-link')
@@ -27,3 +28,4 @@ window.addEventListener('scroll', () => {
   }
   lastScrollTop = scrollMove
 })
+
