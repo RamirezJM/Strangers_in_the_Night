@@ -20,23 +20,25 @@ function renderMenu(items, containerId){
     const itemContainer = document.createElement('div')
     itemContainer.classList.add('item-container')
     let content
-    if(item.ingredientes && item.precio2){
-      content = `<div class="producto">
+    if(item.info && item.precio2){
+      content = `<div class="producto producto4">
                   <p class="nombre">${item.nombre}</p>
-                  <p class="ingredientes">${item.ingredientes}</p>
+                  <p class="ingredientes">${item.info}</p>
                  </div>
-                 <div class="precios">
-                  <p class="valor">$${item.precio}</p>
-                  <p class="valor">$${item.precio2}</p>
+                 <div class="precios precios4">
+                 <p>(2P)</p>
+                  <p class="valor">$${Number(item.precio).toLocaleString('es-CL')}</p>
+                 <p>(4P)</p> 
+                  <p class="valor">$${Number(item.precio2).toLocaleString('es-CL')}</p>
                  </div>`
-    }else if(item.ingredientes){
-      content = `<div class="producto">
+    }else if(item.info){
+      content = `<div class="producto producto3">
                   <p class="nombre">${item.nombre}</p>
-                  <p class="ingredientes">${item.ingredientes}</p>
+                  <p class="ingredientes">${item.info}</p>
                  </div>
-                 <p class="valor">$ ${item.precio}</p>`
+                 <p class="valor">$${Number(item.precio).toLocaleString('es-CL')}</p>`
     }else{
-      content = `<p class="nombre">${item.nombre}</p><p class="valor">$ ${item.precio}</p>`
+      content = `<p class="nombre">${item.nombre}</p><p class="valor">$${Number(item.precio).toLocaleString('es-CL')}</p>`
     }
 
     itemContainer.innerHTML = content
@@ -53,7 +55,7 @@ async function loadMenu(){
   const combinados = await getMenu('assets/data/combinados.json')
   renderMenu(combinados, 'combinados')
 
-  const vinos = await getMenu('assets/data/combinados.json')
+  const vinos = await getMenu('assets/data/vinos.json')
   renderMenu(vinos, 'vinos')
 
   const cervezas = await getMenu('assets/data/cervezas.json')

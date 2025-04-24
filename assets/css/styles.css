@@ -12,7 +12,7 @@ header{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding:1em;
+ /*  padding:1em; */
   flex-wrap: wrap;
   gap: 1em;
 }
@@ -317,6 +317,26 @@ iframe{
 .main-menu{
   padding: 1em;
 }
+
+.intro-menu{
+  width: 90%;
+  padding: 1em;
+  margin: 0 auto;
+}
+.intro-menu>h1{
+  text-align: center;
+  font-size: 1.7rem;
+  text-shadow: 1px 1px 2px #343434, 2px 2px 4px goldenrod;
+}
+.intro-menu>p{
+  margin-block: 1em;
+}
+.intro-menu>ul{
+  padding: 1em;
+}
+.intro-menu>ul li{
+  margin-block: 1em;
+}
 .carta{
   width: 90%;
   margin: auto;
@@ -328,7 +348,7 @@ iframe{
   border-radius: 16px;
   z-index: 1;
   overflow: hidden; 
-
+  max-width: 1000px;
 
   background-blend-mode: multiply;
   background-size: cover;
@@ -381,10 +401,10 @@ iframe{
   background-image: url('../images/sandwich.jpg'), linear-gradient(45deg, #000000, #343434 50%, #000000);
 }
 .menu-title{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-shadow: 1px 1px 2px #343434, 2px 2px 4px goldenrod;
   text-align: center;
-  margin-block: 1em;
+  margin-block: 2em;
 
 }
 .item-container{
@@ -392,9 +412,10 @@ iframe{
   justify-content: space-between;
   align-items: center;
   margin-block: 1em;
+  gap: 1em;
 }
 .ingredientes{
-  max-width: 60%;
+  /* max-width: 60%; */
   margin-block: 1em;
 }
 
@@ -407,13 +428,28 @@ iframe{
 .nombre{
   font-size: 1.1rem;
   font-weight: 700;
-  max-width: 60%;
+  text-shadow: 1px 1px 2px #343434, 2px 2px 4px #00c327;
+
 }
 .valor{
   font-size: 1rem;
+  padding-inline: 1em;
+  font-weight: 600;
 }
 
-
+.carta-tablas>.item-container, .carta-sandwich>.item-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 2em;
+  gap: 0;
+}
+.producto4, .producto3{
+  text-align:center;
+}
+.precios4{
+  gap: 0;
+}
 
 /***********eventos*********/
 
@@ -482,27 +518,10 @@ iframe{
 }
 @media (min-width:850px){
  
- /*  header{
-    flex-wrap: nowrap;
-    gap: 1em;
+   header{
+    padding: 1em;
   }
-  h1{
-    font-size: 1.7rem;
-  }
-  .btn-menu{
-    display: none;
-  }
-  nav{
-    width: 60%;
-  }
-  nav ul{
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-    justify-content: space-around;
-    padding-inline: 1em;
-  } */
-  
+
   .main-content h2{
     font-size: 1.5rem;
   }
@@ -515,6 +534,16 @@ iframe{
   .footer-container{
     grid-template-columns: 1fr 1fr;
   }
+
+  .carta-tablas>.item-container, .carta-sandwich>.item-container{
+    flex-direction: row;
+    gap: 1em;
+  }
+
+  .producto3, .producto4{
+    text-align:left;
+  }
+
 }
 @media (min-width:1100px){
    

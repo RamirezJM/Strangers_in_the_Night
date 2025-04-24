@@ -11,7 +11,7 @@
 
 <body>
   <header>
-    <h1>Restaurant, Eventos y Bar-Discoteque</h1>
+    <img src="assets/images/Logo_sm.png" alt="logo las tablas" class="nav-logo">
     <button class="btn-menu"><svg xmlns="http://www.w3.org/2000/svg" class="open-menu" viewBox="0 0 448 512">
         <path
           d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
@@ -32,7 +32,23 @@
 
     </nav>
   </header>
+
+
   <main class="main-menu">
+    <section class="intro-menu">
+      <h1>Nuestro menú</h1>
+      <p>Desde algo para picar hasta ese trago perfecto, tenemos opciones para cada momento. Explora nuestras cartas y elige tus favoritos.</p>
+      <ul>
+        <li><a href="#cocteles">Cócteles</a></li>
+        <li><a href="#combinados">Combinados</a></li>
+        <li><a href="#vinos">Vinos 3/4</a></li>
+        <li><a href="#cervezas">Cervezas</a></li>
+        <li><a href="#bebidas">Bebidas</a></li>
+        <li><a href="#tablas">Tablas</a></li>
+        <li><a href="#sandwich">Sándwiches</a></li>
+      </ul>
+  
+    </section>
     <h2 class="menu-title">Cócteles</h2>
     <section id="cocteles" class="carta"></section>
     <h2 class="menu-title">Combinados</h2>
@@ -44,9 +60,9 @@
     <h2 class="menu-title">Bebidas</h2>
     <section id="bebidas" class="carta"></section>
     <h2 class="menu-title">Tablas</h2>
-    <section id="tablas" class="carta"></section>
+    <section id="tablas" class="carta carta-tablas"></section>
     <h2 class="menu-title">Sándwiches</h2>
-    <section id="sandwich" class="carta"></section>
+    <section id="sandwich" class="carta carta-sandwich"></section>
     
   </main>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
