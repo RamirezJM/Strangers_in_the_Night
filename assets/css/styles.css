@@ -312,8 +312,66 @@ iframe{
   padding-bottom: 1em;
 }
 
+/*==================
+***** NOSOTROS ******
+=====================*/
+.nosotros-title{
+  text-align: center;
+  font-size: 1.7rem;
+  text-shadow: 1px 1px 2px #343434, 2px 2px 4px goldenrod;
+  
+}
 
-/*********menu***********/
+.nosotros-section{
+
+  width: 90%;
+  margin: 2em auto;
+  padding: 1em;
+  position: relative;
+  /* padding: 2rem; */
+  color: white;
+  border-radius: 16px;
+  z-index: 1;
+  overflow: hidden; 
+  max-width: 900px;
+
+}
+
+.nosotros-section::before {
+  content: '';
+  position: absolute;
+  top: -2px; left: -2px; right: -2px; bottom: -2px;
+  background: linear-gradient(270deg, #00c327, #ff00e6, #00c327);
+  background-size: 600% 600%;
+  animation: borderFlow 6s linear infinite;
+  z-index: -1;
+  border-radius: 18px;
+  mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  padding: .5em; /* grosor del borde */
+ }
+
+@keyframes borderFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+} 
+
+strong{
+  text-shadow: 1px 1px 2px #343434, 2px 2px 4px #ff00e6;
+}
+.nosotros-section>p{
+  line-height: 1.5;
+}
+
+
+
+/*==================
+******** MENÚ ********
+====================*/
 .main-menu{
   padding: 1em;
 }
@@ -343,9 +401,8 @@ iframe{
   width: 90%;
   margin: auto;
   padding: 1em;
-  scroll-margin-top: 100px;
   position: relative;
-  padding: 2rem;
+  /* padding: 2rem; */
   color: white;
   border-radius: 16px;
   z-index: 1;
@@ -414,6 +471,7 @@ iframe{
   justify-content: space-between;
   align-items: center;
   margin-block: 1em;
+  padding-inline: 1em;
   gap: 1em;
 }
 .ingredientes{
@@ -431,6 +489,7 @@ iframe{
   font-size: 1.1rem;
   font-weight: 700;
   text-shadow: 1px 1px 2px #343434, 2px 2px 4px #00c327;
+ 
 
 }
 .valor{
