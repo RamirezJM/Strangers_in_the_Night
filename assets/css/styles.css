@@ -7,6 +7,9 @@
   
 }
 
+/*==============
+******* HEADER **********
+===============*/
 header{
   background: linear-gradient(45deg, #000000, #343434 50%, #000000); 
   display: flex;
@@ -127,6 +130,9 @@ nav ul{
   from{opacity: 0;}
   to{opacity: 1;}
 }
+
+
+
 .hero{
   background-image: url('../images/fondo.jpg')/* , linear-gradient(45deg, #000000, #343434 50%, #000000)  */; 
   background-color: gray;
@@ -165,7 +171,7 @@ nav ul{
 
 main{
   background: linear-gradient(45deg, #000000, #343434 50%, #000000); 
-  padding-bottom: 1em;
+  padding: 1em;
 }
  .main-container{
   
@@ -237,6 +243,7 @@ main{
  }
  .main-content a:focus, .main-content a:hover{
   color: #C13584;
+  transform: scale(1.1);
 
  }
  footer{
@@ -322,7 +329,7 @@ iframe{
   
 }
 
-.nosotros-section{
+.nosotros-info, .nosotros-galeria, .eventos{
 
   width: 90%;
   margin: 2em auto;
@@ -333,11 +340,11 @@ iframe{
   border-radius: 16px;
   z-index: 1;
   overflow: hidden; 
-  max-width: 900px;
+  /* max-width: 900px; */
 
 }
 
-.nosotros-section::before {
+.nosotros-info::before, .nosotros-galeria::before, .eventos::before {
   content: '';
   position: absolute;
   top: -2px; left: -2px; right: -2px; bottom: -2px;
@@ -361,12 +368,22 @@ iframe{
 } 
 
 strong{
-  text-shadow: 1px 1px 2px #343434, 2px 2px 4px #ff00e6;
+  text-shadow: 1px 1px 2px #343434, 2px 2px 4px #ff0000;
 }
-.nosotros-section>p{
-  line-height: 1.5;
+.nosotros-info{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
+.nosotros-info>p{
+  line-height: 1.5;
+
+}
+p.info{
+  text-align: center;
+  margin-block: 1em;
+}
 
 
 /*==================
@@ -512,24 +529,32 @@ strong{
   gap: 0;
 }
 
-/***********eventos*********/
+/*=====================
+****** EVENTOS*******
+=====================*/
 
 .eventos{
   display: flex;
   flex-direction: column;
   align-items: center; 
   gap: 1em;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   padding: 1em;
 
 }
+.eventos-info, .eventos-galeria-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
 .eventos-flyer{
-  width: 80%;
+  width: 50%;
 }
 
-.eventos-galeria{
-  width: 80%;
+.eventos-galeria, .nosotros-galeria{
+  width: 90%;
   margin: 0 auto;
   padding: 1em;
   display: grid;
@@ -539,12 +564,12 @@ strong{
   row-gap: 1em;
   justify-items: center;
 }
-.eventos-galeria a{
+.eventos-galeria>a, .nosotros-galeria>a{
   text-align: center;
   width: 100%;
 }
 
-.eventos-galeria a img{
+.eventos-galeria>a img, .nosotros-galeria>a img{
   width: 60%;
   height: auto;
   border-radius: 5px;
@@ -596,6 +621,10 @@ strong{
     grid-template-columns: 1fr 1fr;
   }
 
+  .nosotros-info{
+    flex-direction: row;
+    gap: 3em;
+  }
   .intro-menu>p{
     font-size: 1.1rem;
   }
@@ -622,6 +651,10 @@ strong{
   }
   .valor{
     font-size: 1.2rem;
+  }
+  .eventos{
+    flex-direction: row;
+    align-items: flex-start;
   }
 }
 @media (min-width:1100px){

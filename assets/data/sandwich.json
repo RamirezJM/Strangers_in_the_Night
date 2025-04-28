@@ -27,7 +27,7 @@
     },
     {
       "nombre": "Chemilico",
-      "info": "Bistec de vacuno, cebolla y huevo, acompañado de papas fritas",
+      "info": "Bistec de vacuno, cebolla y huevo, acompañado de papas fritas.",
       "precio": 8000
     },
     {
@@ -67,7 +67,7 @@
     },
     {
       "nombre": "Sanguchito Vegetariano",
-      "info": "Champiñón con 2 agregados (palta, queso, tomate, lechuga, cebolla caramelizada, porotos verdes, aceitunas, pimentón)",
+      "info": "Champiñón con 2 agregados (palta, queso, tomate, lechuga, cebolla caramelizada, porotos verdes, aceitunas, pimentón).",
       "precio": 8500
     },
     {
