@@ -277,10 +277,7 @@ main{
   fill: #C13584;
   width: 2rem;
  }
- .twitter{
-  fill: #ffffff;
-  width: 2rem;
- }
+
  .footer-container section{
   display: flex;
   flex-direction: column;
@@ -299,6 +296,13 @@ main{
   font-size: 1.2rem;
 
  }
+
+ .reservas{
+  display: flex;
+  gap: 1em;
+  align-items: center;
+ }
+
 .social{
   display: flex;
   justify-content: center;
