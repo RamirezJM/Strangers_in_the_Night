@@ -1,5 +1,5 @@
 # Las-Tablas
-Las Tablas Restaurant, Eventos y Bar-Discoteque
+## Restaurant, Eventos y Bar-Discoteque.
  
 https://las-tablas.cl/
 
