@@ -1,7 +1,7 @@
 function createGallery(evento, cantidad){
   const container = document.querySelector(`.${evento}`)
   for(let i = 1; i <= cantidad; i++){
-    const path = `assets/images/eventos/${evento}/${i}.jpg`
+    const path = `assets/images/eventos/${evento}/${i}.webp`
     const link = document.createElement('a')
     link.href = path
     link.classList.add('evento-link')

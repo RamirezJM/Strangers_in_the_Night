@@ -134,7 +134,7 @@ nav ul{
 
 
 .hero{
-  background-image: url('../images/fondo.jpg')/* , linear-gradient(45deg, #000000, #343434 50%, #000000)  */; 
+  background-image: url('../images/fondo.webp')/* , linear-gradient(45deg, #000000, #343434 50%, #000000)  */; 
   background-color: gray;
   background-blend-mode: multiply;
   
@@ -231,7 +231,9 @@ main{
  .main-content img{
   width: 100%;
   height: auto;
+  aspect-ratio: 1.7 / 1;
   object-fit: cover;
+  border-radius: 5px;
  }
  .main-content p{
   color: #faebd7;
@@ -326,7 +328,7 @@ iframe{
 /*==================
 ***** NOSOTROS ******
 =====================*/
-.nosotros-title{
+.nosotros-title, .eventos-title{
   text-align: center;
   font-size: 1.7rem;
   text-shadow: 1px 1px 2px #343434, 2px 2px 4px goldenrod;
@@ -460,25 +462,25 @@ p.info{
 } 
 
 #cocteles{
-  background-image: url('../images/cocteles.jpg'), linear-gradient(45deg, #000000, #343434 50%, #000000);
+  background-image: url('../images/menu/cocteles.webp'), linear-gradient(45deg, #000000, #343434 50%, #000000);
 }
 #combinados{
-  background-image: url('../images/combinados.jpg'), linear-gradient(45deg, #000000, #343434 50%, #000000);
+  background-image: url('../images/menu/combinados.webp'), linear-gradient(45deg, #000000, #343434 50%, #000000);
 }
 #vinos{
-  background-image: url('../images/vinos.jpg'), linear-gradient(45deg, #000000, #343434 50%, #000000);
+  background-image: url('../images/menu/vinos.webp'), linear-gradient(45deg, #000000, #343434 50%, #000000);
 }
 #cervezas{
-  background-image: url('../images/cervezas.jpg'), linear-gradient(45deg, #000000, #343434 50%, #000000);
+  background-image: url('../images/menu/cervezas.webp'), linear-gradient(45deg, #000000, #343434 50%, #000000);
 }
 #bebidas{
-  background-image: url('../images/bebidas.jpg'), linear-gradient(45deg, #000000, #343434 50%, #000000);
+  background-image: url('../images/menu/bebidas.webp'), linear-gradient(45deg, #000000, #343434 50%, #000000);
 }
 #tablas{
-  background-image: url('../images/tablas.jpg'), linear-gradient(45deg, #000000, #343434 50%, #000000);
+  background-image: url('../images/menu/tablas.webp'), linear-gradient(45deg, #000000, #343434 50%, #000000);
 } 
 #sandwich{
-  background-image: url('../images/sandwich.jpg'), linear-gradient(45deg, #000000, #343434 50%, #000000);
+  background-image: url('../images/menu/sandwich.webp'), linear-gradient(45deg, #000000, #343434 50%, #000000);
 }
 .menu-title{
   font-size: 1.3rem;
@@ -538,14 +540,26 @@ p.info{
 =====================*/
 
 .eventos{
-  display: flex;
+/*   display: flex;
   flex-direction: column;
   align-items: center; 
-  gap: 1em;
+  gap: 1em; */
   width: 90%;
-  margin: 0 auto;
+  margin: 1em auto;
   padding: 1em;
 
+}
+
+.eventos>h2{
+  text-align: center;
+  margin-block: 1em;
+}
+
+.eventos-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
 }
 .eventos-info, .eventos-galeria-container{
   display: flex;
@@ -585,6 +599,7 @@ p.info{
   header{
     flex-wrap: nowrap;
     justify-content: space-between;
+    padding-inline: .5em;
   }
   .btn-menu{
     display: none;
@@ -656,9 +671,13 @@ p.info{
   .valor{
     font-size: 1.2rem;
   }
-  .eventos{
+  .eventos-container{
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
+  }
+  .contact>p{
+    font-size: 1.1rem;
   }
 }
 @media (min-width:1100px){
