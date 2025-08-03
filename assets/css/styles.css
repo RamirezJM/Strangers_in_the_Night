@@ -51,7 +51,8 @@ text-shadow: 2px 2px 4px #343434, 4px 4px 6px goldenrod;
  */
 
  .nav-logo{
-  width: 100px;
+  width: 80px;
+  border-radius: 50%;
  }
 .btn-menu{
   width: 3em;
@@ -134,7 +135,7 @@ nav ul{
 
 
 .hero{
-  background-image: url('../images/fondo.webp')/* , linear-gradient(45deg, #000000, #343434 50%, #000000)  */; 
+  background-image: url('../images/bar-fondo.jpg')/* , linear-gradient(45deg, #000000, #343434 50%, #000000)  */; 
   background-color: gray;
   background-blend-mode: multiply;
   
@@ -171,7 +172,7 @@ nav ul{
 
 main{
   background: linear-gradient(45deg, #000000, #343434 50%, #000000); 
-  padding: 1em;
+  /* padding: 1em; */
 }
  .main-container{
   
