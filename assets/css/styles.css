@@ -335,7 +335,12 @@ iframe{
   text-shadow: 1px 1px 2px #343434, 2px 2px 4px goldenrod;
   
 }
-
+.nosotros-info{
+  display: flex;
+}
+.nosotros-info img{
+  width: 50%;
+}
 .nosotros-info, .nosotros-galeria, .eventos{
 
   width: 90%;
@@ -636,6 +641,8 @@ p.info{
   }
   .main-container{
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 2em 4em;
+    gap: 3em;
   }
   .footer-container{
     grid-template-columns: 1fr 1fr;
