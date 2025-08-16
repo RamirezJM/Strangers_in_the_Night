@@ -1,10 +1,19 @@
-*{
+* {
   margin: 0;
   padding: 0;
+}
+
+*, ::before, ::after {
   box-sizing: border-box;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+html {
+ scroll-behavior: smooth;
+}
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.5;
   color: #faebd7;
-  
 }
 
 /*==============
@@ -20,38 +29,8 @@ header{
   gap: 1em;
 }
 
-/* h1{
-text-align: center;
-font-size: 1.3rem;
-font-weight: 700;
-color: #faebd7;
-text-shadow: 2px 2px 4px #343434, 4px 4px 6px goldenrod;
-}
-.title img:hover{
-  box-shadow: 0 0 7px #fff,
-  0 0 10px #fff,
-  0 0 15px #fff,
-  0 0 20px #0fa,
-  0 0 25px #0fa,
-  0 0 30px #0fa,
-  0 0 35px #0fa,
-  0 0 40px #0fa;
-
-}
-.title p{
-  font-size: 1.7rem;
-  font-weight: 700;
-  color: #faebd7;
-  font-style: italic;
-  margin-inline: 1em;
-  text-shadow: 1px 1px 2px #343434, 2px 2px 4px goldenrod;
-  text-transform: uppercase;
-  text-align: center;
-}
- */
-
  .nav-logo{
-  width: 80px;
+  width: 60px;
   border-radius: 50%;
  }
 .btn-menu{
@@ -149,24 +128,36 @@ nav ul{
  
 .hero-title{
   margin-block: 1em;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
     
 }
 
-.hero-title>p{
+.hero-title>h1{
+  text-align: center;
   font-size: 3.5rem;
   font-weight: 600;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-style: italic;
   text-shadow: 1px 1px 2px #343434, 2px 2px 4px goldenrod;
 }
-.hero-title>h1{
+.hero-title>p{
   font-size: 2rem;
   font-weight: 600;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-style: italic;
   text-shadow: 1px 1px 2px #343434, 2px 2px 4px goldenrod;
 
+}
+.btn-reservas{
+  padding: .5em 1em;
+  border: solid 3px #25D366;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 
@@ -182,6 +173,24 @@ main{
   gap: 1em;
  }
 
+ .container-section{
+  display: flex;
+  flex-direction: column;
+
+
+  border: 2px solid transparent;
+  border-radius: 16px;
+  animation: glow 2s ease-in-out infinite alternate;
+ }
+
+ @keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #00c327, 0 0 10px #ff00e6;
+  }
+  100% {
+    box-shadow: 0 0 20px #00c327, 0 0 30px #ff00e6;
+  }
+}
  .main-content{
   
   border-radius: 10px; 
@@ -622,11 +631,18 @@ p.info{
  .hero-title{
     padding-block: 3em;
   } 
-  .hero-title>p{
+  .hero-title>h1{
     font-size: 4rem;
   }
  
 }
+
+@media (min-width:750px){
+   .main-content{
+    flex-direction: row;
+  }
+}
+
 @media (min-width:850px){
  
    header{
@@ -644,6 +660,7 @@ p.info{
     padding: 2em 4em;
     gap: 3em;
   }
+ 
   .footer-container{
     grid-template-columns: 1fr 1fr;
   }
@@ -696,10 +713,10 @@ p.info{
   .hero-title{
     padding-block: 5em;
   }
-  .hero-title>p{
+  .hero-title>h1{
     font-size: 5rem;
   } 
-  .hero-title>h1{
+  .hero-title>p{
     font-size: 2.5rem;
   }
   
