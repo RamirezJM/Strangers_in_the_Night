@@ -24,7 +24,7 @@ header{
   display: flex;
   justify-content: space-around;
   align-items: center;
- /*  padding:1em; */
+  /* padding:1em;  */
   flex-wrap: wrap;
   gap: 1em;
 }
@@ -78,7 +78,7 @@ nav ul{
   text-decoration: none;
   color: #faebd7;
   font-size: 1.1rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  
   font-style: italic;
   font-weight: 600;
 }
@@ -165,6 +165,13 @@ main{
   background: linear-gradient(45deg, #000000, #343434 50%, #000000); 
   /* padding: 1em; */
 }
+
+.main-section{
+  width: 90%;
+  padding: 1em;
+  margin: 0 auto;
+}
+
  .main-container{
   
   display: grid;
@@ -176,7 +183,9 @@ main{
  .container-section{
   display: flex;
   flex-direction: column;
-
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em;
 
   border: 2px solid transparent;
   border-radius: 16px;
@@ -638,8 +647,12 @@ p.info{
 }
 
 @media (min-width:750px){
-   .main-content{
+   .container-section{
     flex-direction: row;
+  }
+  .image-section{
+    width: 50%;
+    
   }
 }
 
@@ -665,10 +678,10 @@ p.info{
     grid-template-columns: 1fr 1fr;
   }
 
-  .nosotros-info{
+ /*  .nosotros-info{
     flex-direction: row;
     gap: 3em;
-  }
+  } */
   .intro-menu>p{
     font-size: 1.1rem;
   }
