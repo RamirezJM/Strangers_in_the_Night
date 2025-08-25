@@ -3,13 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <!--   <meta property="og:title" content="Las Tablas Restaurant">
-  <meta property="og:description" content="Restaurant que fusiona lo rústico y lo moderno, ofreciendo un espacio íntimo, cálido y relajado, para compartir buenos momentos de distracción entre familias y amigos. Exquisita gastronomía, música y ambiente agradable. Amplio estacionamiento e instalaciones, para todo público.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://las-tablas.cl/assets/images/las-tablasOG.jpg">
-  <meta property="og:url" content="https://las-tablas.cl">
-  <meta property="og:locale" content="es_CL">
-  <link rel="canonical" href="https://las-tablas.cl/nosotros.html"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/styles.css">
   <title>Strangers in the Night</title>
@@ -39,19 +32,56 @@
     </nav>
   </header>
   <main>
-    <h1 class="pages-title">Nosotros</h1>
+    <h1 class="pages-title">Reservas</h1>
 
-    <section class="about animated-border">
-      <div class="about-info">
-        <p>"Strangers in the Night" nació de una coincidencia, de una conversación de tres amigos en una barra, que
-          compartían la pasión por los buenos tragos, la música con alma y las noches interminables. Cansados de los
-          ambientes ruidosos e impersonales, soñamos con un lugar donde la elegancia y la calidez se encontraran.</p>
-        <p>Así, decidimos crear un espacio con una atmósfera tan única como la amistad que nos unió. Un lugar con
-          sillones de cuero, ladrillos a la vista y el brillo tenue de las luces de neón. Desde nuestra coctelería de
-          autor hasta la simpleza de una hamburguesa bien hecha, cada detalle está pensado para hacer de tu noche una
-          historia. En Strangers, eres más que un cliente; eres parte de nuestra velada.</p>
-      </div>
-      <img src="assets/images/nosotros2.jpg" alt="3 socios dueños del negocio" class="about-image">
+    <section class="booking">
+      <p class="booking-info">Te esperamos viernes, sábado y domingo. Selecciona la mesa, fecha y hora de tu visita para
+        que el ambiente de
+        "Strangers in the Night" sea el escenario de tu próxima gran velada. </p>
+
+      <form action="" class="booking-form">
+        <fieldset class="booking-form-people">
+          <legend>Número de personas:</legend>
+          <div>
+            <input type="radio" id="people1_2" name="people" value="2">
+            <label for="people1_2">1 - 2</label>
+          </div>
+          <div>
+            <input type="radio" id="people3_4" name="people" value="4">
+            <label for="people3_4">3 - 4</label>
+          </div>
+          <div>
+            <input type="radio" id="people5_6" name="people" value="6">
+            <label for="people5_6">5 - 6</label>
+          </div>
+          <div>
+            <input type="radio" id="people6" name="people" value="8">
+            <label for="people6">Más de 6</label>
+          </div>
+        </fieldset>
+
+        <label for="day_select">Día:</label>
+        <select name="day_select" id="day_select">
+
+          <option value="viernes">Viernes</option>
+          <option value="sabado">Sábado</option>
+          <option value="domingo">Domingo</option>
+        </select>
+
+        <label for="hour_select">Hora</label>
+        <select name="hour_select" id="hour_select">
+
+          <option value="19:00">19:00</option>
+          <option value="19:30">19:30</option>
+          <option value="20:00">20:00</option>
+          <option value="20:30">20:30</option>
+          <option value="21:00">21:00</option>
+          <option value="21:30">21:30</option>
+          <option value="22:00">22:00</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+      </form>
 
     </section>
 
