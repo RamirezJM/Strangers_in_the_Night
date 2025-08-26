@@ -108,6 +108,17 @@ header {
   gap: 1em;
 }
 
+.logo{
+  display: flex;
+  align-items: center;
+  
+}
+.logo-title p{
+  font-weight: 600;
+  font-style: italic;
+  color: #f8d882;
+  margin-left: -5px;
+}
 .nav-logo {
   width: 60px;
   border-radius: 50%;
@@ -235,11 +246,14 @@ nav ul {
 
 .btn-reservas {
   padding: .5em 1em;
-  border: solid 3px var(--accent);
+  border: solid 3px var(--font1);
   border-radius: 5px;
+  background-color: var(--accent);
   font-size: 1.1rem;
   font-weight: 600;
+  color: var(--font1);
   text-decoration: none;
+
 }
 
 /*======  main-section  ========*/
@@ -460,16 +474,25 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 1em;
+  width: 80%;
+  margin: 2em auto;
+  padding: 1em;
+  border: var(--font1) solid 2px;
+  border-radius: 5px;
+  box-shadow: var(--text-shadow);
+}
+fieldset{
+  padding: .5em;
+  border-radius: 5px;
 }
 
-/* .booking-form-people{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+input, select{
+  border-radius: 5px;
+  line-height: 1.5;
+  padding: .5em;
 }
-.booking-form-people label{
-  display: inline-block;
-} */
+
+
 
 @media (min-width:650px) {
   header {

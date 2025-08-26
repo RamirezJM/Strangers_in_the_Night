@@ -28,7 +28,3 @@ window.addEventListener('scroll', () => {
   }
   lastScrollTop = scrollMove
 })
-
-/* baguette*/
-
-baguetteBox.run('.nosotros-galeria', {buttons: true})

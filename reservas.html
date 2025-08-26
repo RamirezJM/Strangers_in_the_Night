@@ -23,9 +23,9 @@
     <nav>
       <ul class="links-list">
         <li><a href="index.html" class="nav-link">Inicio</a></li>
-        <li><a href="nosotros.html" class="nav-link active">Nosotros</a></li>
+        <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
         <li><a href="menu.html" class="nav-link">Menú</a></li>
-        <li><a href="reservas.html" class="nav-link">Reservas</a></li>
+        <li><a href="reservas.html" class="nav-link active">Reservas</a></li>
         <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
       </ul>
 
@@ -39,7 +39,7 @@
         que el ambiente de
         "Strangers in the Night" sea el escenario de tu próxima gran velada. </p>
 
-      <form action="" class="booking-form">
+      <form action="" class="booking-form" id="booking-form">
         <fieldset class="booking-form-people">
           <legend>Número de personas:</legend>
           <div>
@@ -80,6 +80,12 @@
           <option value="22:00">22:00</option>
         </select>
 
+        <label for="user_name">Nombre:</label>
+        <input id="user_name" name="user_name" type="text">
+
+        <label for="user_email">Email:</label>
+        <input id="user_email" name="user_email" type="email">
+
         <button type="submit">Enviar</button>
       </form>
 
@@ -98,7 +104,8 @@
     </div>
   </footer>
 
-  <script src="assets/js/script.js"></script>
+ <script src="assets/js/form-script.js"></script>
+ <script src="assets/js/script.js"></script>
 </body>
 
 </html>
