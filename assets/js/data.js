@@ -1,4 +1,80 @@
-async function getMenu(jsonFile){
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
+
+const menuButtons = document.querySelector('.menu-buttons-container')
+menuButtons.addEventListener('click', (event) => {
+  const clickedButton = event.target
+  
+  if(clickedButton.tagName === 'BUTTON'){
+    const category = clickedButton.dataset.categoria
+    getMenuData(category)
+  }
+  
+})
+
+async function getMenuData(category){
+  let url
+  category === 'todos' ? url = 'http://localhost:4000/api/menu'
+                       : url = `http://localhost:4000/api/menu/${category}`
+  try {
+  const response = await fetch(url)
+  if(!response.ok){
+    throw new Error(response.status)
+  }
+  const data = await response.json()
+ 
+  rendermenu(data)
+    
+  } catch (error) {
+    console.error(error)
+    return null
+    
+  }
+}
+function rendermenu(menuData){
+  
+
+ if(Array.isArray(menuData)){
+ menuData.forEach(({nombre, info, precio}) => {
+  const container = document.querySelector('.carta-pizzas')
+  const carta = document.createElement('div')
+  let contenido
+  contenido = `
+            <h3>${nombre}</h3>
+            <p>${info}</p>
+            <p>${precio}</p>
+    `
+   carta.innerHTML = contenido
+  container.appendChild(carta)
+  })
+ }
+ else{
+  console.log(Object.entries(menuData))
+ }
+}
+
+
+
+
+
+
+
+
+/* async function getMenu(jsonFile){
   try {
     const response = await fetch(jsonFile)
     if(!response.ok){
@@ -73,3 +149,4 @@ async function loadMenu(){
 }
 loadMenu()
 
+ */
